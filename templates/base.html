@@ -56,15 +56,16 @@
         </div>
         <hr>
 
-        {% if not session.logged_in %}
-             <p>You are not logged in.</p>
-        {% else %}
-             <p>You are logged in.</p>
-        {% endif %}
-
         {% block footer %}
         <footer class="footer">
             <p>&copy; ComeToStudyInAmerica</p>
+            <div class="pull-right">
+        {% if not session.logged_in %}
+            <p>You are not logged in.</p>
+        {% else %}
+            <p>You are logged in.</p>
+        {% endif %}
+            </div>
         </footer>
         {% endblock %}
     </div>
