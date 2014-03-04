@@ -2,7 +2,7 @@
 <html lang="zh-Hans">
   <head>
     {% block head %}
-    <title>SuperApp{% block title %}{% endblock %}</title>
+    <title>ComeToStudyInAmerica{% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -22,7 +22,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">SuperApp</a>
+        <a class="navbar-brand" href="/">Come to Study in America</a>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">关于我们</a></li>
+            <li><a href="serivce.html">服务范围</a></li>
+            <li><a href="workflow.html">服务流程</a></li>
+            <li><a href="resources.html">资源共享</a></li>
+            <li><a href="contacts.html">联系方式</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
         <div class="nav-collapse">
           {% block navbar_right %}
           <ul class="nav navbar-nav pull-right">
@@ -45,7 +56,7 @@
         <hr>
         {% block footer %}
         <footer class="footer">
-            <p>&copy; SuperApp</p>
+            <p>&copy; ComeToStudyInAmerica</p>
         </footer>
         {% endblock %}
     </div>
