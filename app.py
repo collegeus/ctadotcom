@@ -21,15 +21,15 @@ def index():
     return render_template('index.html')
 
 @app.route("/services")
-def index():
+def services():
     return render_template('services.html')
 
 @app.route("/workflow")
-def index():
+def workflow():
     return render_template('workflow.html')
 
 @app.route("/contacts")
-def index():
+def contacts():
     return render_template('contacts.html')
 
 # launch
