@@ -20,6 +20,18 @@ def page_not_found(e):
 def index():
     return render_template('index.html')
 
+@app.route("/services")
+def index():
+    return render_template('services.html')
+
+@app.route("/workflow")
+def index():
+    return render_template('workflow.html')
+
+@app.route("/contacts")
+def index():
+    return render_template('contacts.html')
+
 # launch
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
