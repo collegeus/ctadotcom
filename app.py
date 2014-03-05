@@ -28,6 +28,10 @@ def services():
 def workflow():
     return render_template('workflow.html')
 
+@app.route("/post/<int:post_id>")
+def show_post(post_id):
+    return render_template('post.html', id=post_id)
+
 @app.route("/contacts")
 def contacts():
     return render_template('contacts.html')
