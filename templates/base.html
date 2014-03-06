@@ -55,9 +55,14 @@
                       <li><a href="/post/2">出国留学</a></li>
                       <li><a href="/post/3">三十而立</a></li>
                       <li class="divider"></li>
+                      <li class="dropdown-header">申请学校</li>
+                      <li><a href="/post/4">发现自己</a></li>
+                      <li><a href="/post/5">发现学校</a></li>
+                      <li><a href="/post/6">为什么选择你</a></li>
                       <li class="dropdown-header">生活常识</li>
-                      <li><a href="/post/4">民主党共和党</a></li>
-                      <li><a href="/post/5">南方北方</a></li>
+                      <li><a href="/post/7">车轮上的国家</a></li>
+                      <li><a href="/post/8">何谓"主流社会"</a></li>
+                      <li><a href="/post/9">呐，做人呢，最重要的是开心</a></li>
                   </ul>
               </li>
               <li><a href="/contacts">联系方式</a></li>
@@ -66,9 +71,9 @@
           {% block navbar_right %}
               <ul class="nav navbar-nav navbar-right">
                   {% if not session.logged_in %}
-                      <li><a href="#">Login or Signup</a></li>
+                      <li><a href="#">登录 或 注册</a></li>
                   {% else %}
-                      <li><a href="#">Logout</a></li>
+                      <li><a href="#">登出</a></li>
                   {% endif %}
               </ul>
           {% endblock %}
