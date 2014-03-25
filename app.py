@@ -30,7 +30,10 @@ def workflow():
 
 @app.route("/post/<int:post_id>")
 def show_post(post_id):
-    return render_template('post.html', id=post_id)
+    if post_id < 4:
+        return render_template('post%02d.html' % (post_id))
+    else:
+        return render_template('post.html', id=post_id)
 
 @app.route("/contacts")
 def contacts():
