@@ -35,6 +35,10 @@ def show_post(post_id):
     else:
         return render_template('post.html', id=post_id)
 
+@app.route("/letter/<string:letter_id>")
+def show_letter(letter_id):
+    return render_template('letter{}.html' % (letter_id))
+
 @app.route("/contacts")
 def contacts():
     return render_template('contacts.html')
